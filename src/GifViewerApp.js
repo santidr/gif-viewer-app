@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import AddCategory from './components/AddCategory'
+import HeaderApp from './components/HeaderApp'
 import GifGrid from './components/GifGrid'
 
 const GifViewerApp = () => {
@@ -9,11 +9,7 @@ const GifViewerApp = () => {
 
     return (
         <>
-            <h2>GifViewerApp</h2>
-            <AddCategory
-                setCategories={setCategories} 
-            />
-            <hr/>
+            <HeaderApp setCategories={setCategories} />
 
             <ol>
                 {
